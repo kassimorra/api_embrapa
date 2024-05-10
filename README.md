@@ -6,7 +6,7 @@ Esta API tem como objetivo realizar o download as informações da Embrapa e rea
 
 ## Produção de Vinho
 http://vitibrasil.cnpuv.embrapa.br/download/Producao.csv
-## arquivo sobre processamento de vinho
+## Processamento de vinho
 http://vitibrasil.cnpuv.embrapa.br/download/ProcessaViniferas.csv
 http://vitibrasil.cnpuv.embrapa.br/download/ProcessaAmericanas.csv
 http://vitibrasil.cnpuv.embrapa.br/download/ProcessaMesa.csv
@@ -34,3 +34,19 @@ o Está API fará o download dos arquivos mencionados acima e os armazenará em 
 
 * API ETL
 o Está API terá a função de realizar o ETL nos dados baixados de forma a estruturar e limpar os arquivos, deixando estes em formato de tabelas prontas para a realização de Analytics. 
+
+# Requisitos
+
+flask3.0.3
+pandas2.2.2
+requests2.31.0
+
+# Próximos passos
+
+- Montar o requirements.txt
+- Construir o get para download dos arquivos da embrapa
+- Construir o ETL para tratamento dos arquivos
+- Montar um analytics simples dos arquivos
+- Montar autenticação das apis
+
+- melhoria no tratamento de erro dos downloads
