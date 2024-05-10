@@ -19,7 +19,6 @@ def getProd(index):
 
 @app.route('/getFile', methods=['GET'])
 def getAll():
-    #get Filename from Index
     embFiles = embrapaFiles.embrapaFiles()
     for i in range(len(embFiles.files)):
         fileName = embFiles.getFile(i)
