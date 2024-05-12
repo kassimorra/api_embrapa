@@ -1,13 +1,8 @@
-from flask import Flask, request
-from flask import Flask, jsonify, request
+from flask import Flask, request, jsonify
 from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt_identity, verify_jwt_in_request
 
 import pandas as pd
-from helpers import download, embrapaFiles
-
-app = Flask(__name__)
-app.config['JWT_SECRET_KEY'] = 'qualquerStringAqui'  # Change this to a secure random key in production
-jwt = JWTManager(app)
+from helpers import download, embrapaFiles, configSwagger
 
 users = {
     'example': {
@@ -16,10 +11,18 @@ users = {
     }
 }
 
+
+app = Flask(__name__)
+
+app.config['JWT_SECRET_KEY'] = 'qualquerStringAqui'  # Change this to a secure random key in production
+jwt = JWTManager(app)
+
+app.register_blueprint(configSwagger.swagger_ui_blueprint, url_prefix=configSwagger.SWAGGER_URL)
+
 @app.route("/")
 def hello_world():
     return "<p>Hello, World!</p>"
-        
+       
 @app.route('/getFile/<index>', methods=['GET'])
 @jwt_required()
 def getProd(index):
@@ -37,14 +40,19 @@ def getProd(index):
     
 
 @app.route('/getFile', methods=['GET'])
+@jwt_required()
 def getAll():
-    embFiles = embrapaFiles.embrapaFiles()
-    for i in range(len(embFiles.files)):
-        fileName = embFiles.getFile(i)
-        #download embrapa filename
-        downloadFile = download.downloadFiles()
-        downloadFile.download(fileName)
-    return "end"
+    try:
+        verify_jwt_in_request()
+        embFiles = embrapaFiles.embrapaFiles()
+        for i in range(len(embFiles.files)):
+            fileName = embFiles.getFile(i)
+            #download embrapa filename
+            downloadFile = download.downloadFiles()
+            downloadFile.download(fileName)
+        return "end"
+    except Exception as e:
+        return jsonify({"msg": str(e)}), 401
 
 @app.route('/login', methods=['POST'])
 def login():
