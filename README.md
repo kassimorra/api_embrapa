@@ -40,6 +40,8 @@ o Está API terá a função de realizar o ETL nos dados baixados de forma a est
 flask3.0.3
 pandas2.2.2
 requests2.31.0
+flask_jwt_extended4.6.0
+flask_restx1.3.0
 
 # Próximos passos
 
