@@ -5,6 +5,7 @@ from jose import JWTError, jwt
 from datetime import datetime, timedelta
 from passlib.context import CryptContext
 from pydantic import BaseModel
+import bcrypt
 
 from database.database import SessionLocal, engine
 from database.models import User

@@ -1,6 +1,8 @@
+from helpers.download import downloadFiles
+
 class embrapaFiles:
     def __init__(self):
-        #tupla
+
         self.files = (
             "http://vitibrasil.cnpuv.embrapa.br/download/Producao.csv",
             "http://vitibrasil.cnpuv.embrapa.br/download/ProcessaViniferas.csv",
@@ -19,9 +21,18 @@ class embrapaFiles:
             "http://vitibrasil.cnpuv.embrapa.br/download/ExpSuco.csv"
         )
 
-    def getFile(self, index):
+    def getFile(self, index: int):
         ret = {
             "URL" : self.files[index],
             "File" : self.files[index].replace("http://vitibrasil.cnpuv.embrapa.br/download/", "")
         }
         return ret
+    
+    def embrapaDownloadFile(self, index: int):
+        downloadFile = downloadFiles()
+        downloadFile.download(self.getFile(index))
+
+    def embrapaDownloadAll(self):
+        downloadFile = downloadFiles()
+        for i in range(len(self.files)):
+            downloadFile.download(self.getFile(i))

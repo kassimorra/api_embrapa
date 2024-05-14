@@ -9,14 +9,14 @@ router = APIRouter(
     prefix="/auth"
 )
 
-@router.post("/register")
+@router.post("/register", status_code=status.HTTP_201_CREATED, tags=["Authentication"])
 def register_user(user: auth.UserCreate, db: Session = Depends(auth.get_db)):
     db_user = auth.get_user_by_username(db, username=user.username)
     if db_user:
         raise HTTPException(status_code=400, detail="Username already registered")
     return auth.create_user(db=db, user=user)
 
-@router.post("/token")
+@router.post("/token", status_code=status.HTTP_201_CREATED, tags=["Authentication"])
 def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(auth.get_db)):
     user = auth.authenticate_user(form_data.username, form_data.password, db)
     if not user:
@@ -31,7 +31,7 @@ def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(), db:
     )
     return {"access_token": access_token, "token_type": "bearer"}
 
-@router.get("/verify-token/{token}")
+@router.get("/verify-token/{token}", tags=["Authentication"])
 async def verify_user_token(token:str):
     auth.verify_token(token=token)
     return {"message": "Token is valid"}

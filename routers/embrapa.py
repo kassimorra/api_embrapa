@@ -1,26 +1,22 @@
-from fastapi import Depends, APIRouter
-from helpers.download import downloadFiles
+from fastapi import Depends, APIRouter, HTTPException, status
 from helpers.embrapaFiles import embrapaFiles
-import authentication as auth
 
 router = APIRouter(
     prefix="/embrapa"
 )
 
-@router.get('/getFile/<index>')
-def getFile(index):
-        embFiles = embrapaFiles()
-        fileName = embFiles.getFile(int(index))
-        #download embrapa filename
-        downloadFile = downloadFiles()
-        return downloadFile.download(fileName)
+@router.get('/getFile/<index>', tags=["Download Embrapa"])
+def Get_Single_File(index: int):
+    try:
+        embrapaFiles().embrapaDownloadFile(index)
+    except:
+        raise HTTPException(status_code=status.HTTP_503_SERVICE_UNAVAILABLE, detail="Failed to download file")
+    return {"message": "sucesso"}
     
-@router.get('/getFile')
-def getAll():
-        embFiles = embrapaFiles()
-        for i in range(len(embFiles.files)):
-            fileName = embFiles.getFile(i)
-            #download embrapa filename
-            downloadFile = downloadFiles()
-            downloadFile.download(fileName)
-        return "end"
+@router.get('/getFile', tags=["Download Embrapa"])
+def Get_All_Files():
+    try:
+        embrapaFiles().embrapaDownloadAll()
+    except:
+        raise HTTPException(status_code=status.HTTP_503_SERVICE_UNAVAILABLE, detail="Failed to download file")
+    return {"message": "sucesso"}
