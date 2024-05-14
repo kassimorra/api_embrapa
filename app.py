@@ -1,96 +1,57 @@
-from flask import Flask, request, jsonify
-from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt_identity, verify_jwt_in_request
+from fastapi import FastAPI, Security, Response
+from fastapi.responses import RedirectResponse
+from fastapi_jwt import JwtAuthorizationCredentials, JwtAccessBearer
 
-import pandas as pd
-from helpers import download, embrapaFiles, configSwagger
+from helpers.download import downloadFiles
+from helpers.embrapaFiles import embrapaFiles
 
-users = {
-    'example': {
-        'password': 'password',
-        'roles': ['user']
-    }
-}
+app = FastAPI()
+
+@app.get('/', include_in_schema=False)
+async def docs() -> RedirectResponse:
+    return RedirectResponse(url='/docs')
+
+#jwt
+access_security = JwtAccessBearer(secret_key="secret_key", auto_error=True)
+
+#jwt routes
+@app.post("/auth")
+def auth():
+    subject = {"username": "username", "role": "user"}
+    return {"access_token": access_security.create_access_token(subject=subject)}
+
+@app.post("/auth_cookie")
+def auth(response: Response):
+    subject = {"username": "username", "role": "user"}
+    access_token = access_security.create_access_token(subject=subject)
+    access_security.set_access_cookie(response, access_token)
+    return {"access_token": access_token}
+
+@app.get("/users/me")
+def read_current_user(
+    credentials: JwtAuthorizationCredentials = Security(access_security),
+):
+    return {"username": credentials["username"], "role": credentials["role"]}
 
 
-app = Flask(__name__)
+####
 
-app.config['JWT_SECRET_KEY'] = 'qualquerStringAqui'  # Change this to a secure random key in production
-jwt = JWTManager(app)
-
-app.register_blueprint(configSwagger.swagger_ui_blueprint, url_prefix=configSwagger.SWAGGER_URL)
-
-@app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
-       
-@app.route('/getFile/<index>', methods=['GET'])
-@jwt_required()
-def getProd(index):
-    try:
-        verify_jwt_in_request()
-        #get Filename from Index
-        embFiles = embrapaFiles.embrapaFiles()
+@app.get('/getFile/<index>')
+def getProd(index, credentials: JwtAuthorizationCredentials = Security(access_security)):
+        embFiles = embrapaFiles()
         fileName = embFiles.getFile(int(index))
         #download embrapa filename
-        downloadFile = download.downloadFiles()
+        downloadFile = downloadFiles()
         return downloadFile.download(fileName)
-    except Exception as e:
-        return jsonify({"msg": str(e)}), 401
     
-    
-
-@app.route('/getFile', methods=['GET'])
-@jwt_required()
-def getAll():
-    try:
-        verify_jwt_in_request()
-        embFiles = embrapaFiles.embrapaFiles()
+@app.get('/getFile')
+def getAll(credentials: JwtAuthorizationCredentials = Security(access_security)):
+        embFiles = embrapaFiles()
         for i in range(len(embFiles.files)):
             fileName = embFiles.getFile(i)
             #download embrapa filename
-            downloadFile = download.downloadFiles()
+            downloadFile = downloadFiles()
             downloadFile.download(fileName)
         return "end"
-    except Exception as e:
-        return jsonify({"msg": str(e)}), 401
 
-@app.route('/login', methods=['POST'])
-def login():
-    username = request.json.get('username', None)
-    password = request.json.get('password', None)
-    
-    user = users.get(username)
-    if user and password == user['password']:
-        access_token = create_access_token(identity=username)
-        return jsonify(access_token=access_token), 200
-    else:
-        return jsonify({"msg": "Bad username or password"}), 401
-
-@app.route('/protected', methods=['GET'])
-@jwt_required()
-def protected():
-    current_user = get_jwt_identity()
-    user = users.get(current_user)
-    return jsonify(logged_in_as=current_user, email=user['email'], roles=user['roles']), 200
-
-@app.route('/validate_token', methods=['GET'])
-def validate_token():
-    try:
-        verify_jwt_in_request()
-        return jsonify({"msg": "Token is valid"}), 200
-    except Exception as e:
-        return jsonify({"msg": str(e)}), 401
-    
-@app.route('/register', methods=['POST'])
-def register():
-    username = request.json.get('username')
-    password = request.json.get('password')
-
-    if username in users:
-        return jsonify({"msg": "Username already exists"}), 400
-
-    users[username] = {
-        'password': password,
-        'roles': ['user']
-    }
-    return jsonify({"msg": "User created successfully"}), 201
+####
