@@ -10,14 +10,20 @@ router = APIRouter(
 )
 
 @router.post("/register", status_code=status.HTTP_201_CREATED, tags=["Authentication"])
-def register_user(user: auth.UserCreate, db: Session = Depends(auth.get_db)):
+async def register_user(user: auth.UserCreate, db: Session = Depends(auth.get_db)):
+    """
+    Registra o usuário no banco passando Usuário e Password no formato JSON
+    """
     db_user = auth.get_user_by_username(db, username=user.username)
     if db_user:
         raise HTTPException(status_code=400, detail="Username already registered")
     return auth.create_user(db=db, user=user)
 
 @router.post("/token", status_code=status.HTTP_201_CREATED, tags=["Authentication"])
-def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(auth.get_db)):
+async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(auth.get_db)):
+    """
+    Rota padrão de autenticação utilizando usuário e senha
+    """
     user = auth.authenticate_user(form_data.username, form_data.password, db)
     if not user:
         raise HTTPException(
@@ -33,5 +39,8 @@ def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(), db:
 
 @router.get("/verify-token/{token}", tags=["Authentication"])
 async def verify_user_token(token:str):
+    """
+    Verifica se o token informado é válido, inválido ou expirado
+    """    
     auth.verify_token(token=token)
     return {"message": "Token is valid"}

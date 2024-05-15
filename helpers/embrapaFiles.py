@@ -21,6 +21,12 @@ class embrapaFiles:
             "http://vitibrasil.cnpuv.embrapa.br/download/ExpSuco.csv"
         )
 
+    def listAll(self) -> dict:
+        allFiles: dict = {}
+        for i in range(len(self.files)):
+            allFiles[str(i)] = self.files[i].replace("http://vitibrasil.cnpuv.embrapa.br/download/", "")
+        return allFiles
+
     def getFile(self, index: int):
         ret = {
             "URL" : self.files[index],
