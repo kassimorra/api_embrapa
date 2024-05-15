@@ -29,17 +29,17 @@ class UserCreate(BaseModel):
     username: str
     password: str
 
-def get_user_by_username(username: str, db: Session = Depends(get_db)):
+def get_user_by_username(db: Session, username: str):
     return db.query(User).filter(User.username == username).first()
 
-def create_user(user: UserCreate, db: Session = Depends(get_db)):
+def create_user(db: Session, user: UserCreate):
     hashed_password = pwd_context.hash(user.password)
     db_user = User(username=user.username, hashed_password = hashed_password)
     db.add(db_user)
     db.commit()
     return "complete"
 
-def authenticate_user(username: str, password: str, db: Session = Depends(get_db)):
+def authenticate_user(username: str, password: str, db: Session):
     user = db.query(User).filter(User.username == username).first()
     if not user:
         return False

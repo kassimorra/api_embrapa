@@ -21,6 +21,8 @@ def download_de_arquivo_unico(index: int):
     """
     try:
         embrapaFiles().embrapaDownloadFile(index)
+    except IndexError:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="File not found")
     except:
         raise HTTPException(status_code=status.HTTP_503_SERVICE_UNAVAILABLE, detail="Failed to download file")
     return {"message": "sucesso"}
