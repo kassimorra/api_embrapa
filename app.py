@@ -13,3 +13,6 @@ app.include_router(embrapa_route, dependencies=[Depends(auth.oauth2_scheme)])
 @app.get('/', include_in_schema=False)
 async def docs() -> RedirectResponse:
     return RedirectResponse(url='/docs')
+
+#"/pytest"
+app.mount("/pytest", StaticFiles(directory="htmlcov", html=True), name="htmlcov")
