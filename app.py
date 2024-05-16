@@ -1,4 +1,5 @@
 from fastapi import Depends
+from fastapi.staticfiles import StaticFiles
 from fastapi.responses import RedirectResponse
 from helpers.fastapiconf import initFast
 import authentication as auth
