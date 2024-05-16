@@ -1,3 +1,8 @@
+import helpers
+import authentication
+import database
+import routers
+
 from helpers.embrapaFiles import embrapaFiles
 
 class TestClassEmbrapa:
