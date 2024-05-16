@@ -8,6 +8,7 @@ class initFast(FastAPI):
         super().__init__()
         origins = [
             "http://127.0.0.1:8000",
+            "http://127.0.0.1:57655",
         ]
         self.app = FastAPI()
         self.app.add_middleware(

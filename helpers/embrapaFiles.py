@@ -1,4 +1,5 @@
 from helpers.download import downloadFiles
+from fastapi import HTTPException, status
 
 class embrapaFiles:
     def __init__(self):
@@ -21,8 +22,14 @@ class embrapaFiles:
             "http://vitibrasil.cnpuv.embrapa.br/download/ExpSuco.csv"
         )
 
-    def getFile(self, index: int):
-        ret = {
+    def listAll(self) -> dict:
+        allFiles: dict = {}
+        for i in range(len(self.files)):
+            allFiles[str(i)] = self.files[i].replace("http://vitibrasil.cnpuv.embrapa.br/download/", "")
+        return allFiles
+
+    def getFile(self, index: int) -> dict:
+        ret: dict = {
             "URL" : self.files[index],
             "File" : self.files[index].replace("http://vitibrasil.cnpuv.embrapa.br/download/", "")
         }
