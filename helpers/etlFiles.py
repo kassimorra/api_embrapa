@@ -2,7 +2,7 @@ import pandas as pd
 import os
 import re
 from unidecode import unidecode
-from helpers.embrapaFiles import embrapaFiles
+#from embrapaFiles import embrapaFiles
 
 class etlFiles:
     def __init__(self):
@@ -165,14 +165,14 @@ class etlFiles:
             self.file.to_csv(filename,index=False)
                
     def makeEtl(self,index):
-        index = index
-        self.readAllFiles(self,index)
-        self.subNoneAsZero(self,index)
+        #index = index
+        self.readAllFiles(index)
+        self.subNoneAsZero(index)
         #self.clearNullValues(self,index)
-        self.ajustTypes(self,index)
-        self.sumSameColuns(self,index)
-        self.removeDuplicates(self,index)
-        self.saveFiles(self,index)
+        self.ajustTypes(index)
+        self.sumSameColuns(index)
+        self.removeDuplicates(index)
+        self.saveFiles(index)
         if(index == -1):
             self.returnAllFiles()
         else:
