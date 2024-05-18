@@ -1,5 +1,5 @@
-from fastapi import Depends, APIRouter, HTTPException, status
-from helpers.embrapaFiles import embrapaFiles
+from fastapi import APIRouter, HTTPException, status
+from helpers.hlpEmbrapa import get_index_filename, embrapa_download
 from fastapi.responses import JSONResponse
 from fastapi.encoders import jsonable_encoder
 
@@ -12,28 +12,17 @@ def lista_arquivos_da_embrapa():
     """
     Lista todos os arquivos da Embrapa com o seu respectivo ID
     """
-    return JSONResponse(content=jsonable_encoder(embrapaFiles().listAll()), status_code = status.HTTP_201_CREATED)
+    return JSONResponse(content=jsonable_encoder(get_index_filename()), status_code = status.HTTP_201_CREATED)
 
-@router.get('/getFile/<index>', tags=["Download Embrapa"])
-def download_de_arquivo_unico(index: int):
+@router.get('/getFile', tags=["Download Embrapa"])
+def download_de_arquivo(index: int | None = None):
     """
     Faz o download de um arquivo da Embrapa com base no seu id de referência (index)
     """
     try:
-        embrapaFiles().embrapaDownloadFile(index)
+        embrapa_download(index)
     except IndexError:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="File not found")
-    except:
-        raise HTTPException(status_code=status.HTTP_503_SERVICE_UNAVAILABLE, detail="Failed to download file")
-    return {"message": "sucesso"}
-    
-@router.get('/getFile', tags=["Download Embrapa"])
-def download_de_todos_arquivos():
-    """
-    Faz o download de todos os arquivos da Embrapa
-    """    
-    try:
-        embrapaFiles().embrapaDownloadAll()
     except:
         raise HTTPException(status_code=status.HTTP_503_SERVICE_UNAVAILABLE, detail="Failed to download file")
     return {"message": "sucesso"}
