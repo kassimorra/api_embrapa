@@ -1,0 +1,214 @@
+id	ano	tipo_item	classificação	Cultivar	Quantidade (Kg)
+1	2022	subtotal	Viníferas	TINTAS	*
+2	2022	item	Viníferas	Alicante Bouschet	*
+3	2022	item	Viníferas	Ancelota	*
+4	2022	item	Viníferas	Aramon	*
+5	2022	item	Viníferas	Alfrocheiro	*
+6	2022	item	Viníferas	Arinarnoa	*
+7	2022	item	Viníferas	Aspirant Bouschet	*
+8	2022	item	Viníferas	Barbera	*
+9	2022	item	Viníferas	Bonarda	*
+10	2022	item	Viníferas	Cabernet Franc	*
+11	2022	item	Viníferas	Cabernet Sauvignon	*
+12	2022	item	Viníferas	Caladoc	*
+13	2022	item	Viníferas	Campanario	*
+14	2022	item	Viníferas	Canaiolo	*
+15	2022	item	Viníferas	Carignan	*
+16	2022	item	Viníferas	Carmenere	*
+17	2022	item	Viníferas	Castelão	*
+18	2022	item	Viníferas	Corvina	*
+19	2022	item	Viníferas	Croatina	*
+20	2022	item	Viníferas	Cinsaut	*
+21	2022	item	Viníferas	Dom Felder	*
+22	2022	item	Viníferas	Dolcetto	*
+23	2022	item	Viníferas	Durif	*
+24	2022	item	Viníferas	Egiodola	*
+25	2022	item	Viníferas	Ekigaina	*
+26	2022	item	Viníferas	Festival (Sugraone)	*
+27	2022	item	Viníferas	Franconia	*
+28	2022	item	Viníferas	Freisa	*
+29	2022	item	Viníferas	Gamay St Romain	*
+30	2022	item	Viníferas	Gamay Beaujolais	*
+31	2022	item	Viníferas	Grand Noir	*
+32	2022	item	Viníferas	Grenache	*
+33	2022	item	Viníferas	Jaen	*
+34	2022	item	Viníferas	Lagrein	*
+35	2022	item	Viníferas	Lambrusco	*
+36	2022	item	Viníferas	Malbec	*
+37	2022	item	Viníferas	Marzemina	*
+38	2022	item	Viníferas	Merlot	*
+39	2022	item	Viníferas	Marselan	*
+40	2022	item	Viníferas	Molinera	*
+41	2022	item	Viníferas	Montepulciano	*
+42	2022	item	Viníferas	Moscato Bailey	*
+43	2022	item	Viníferas	Napa Gamay	*
+44	2022	item	Viníferas	Nebbiolo	*
+45	2022	item	Viníferas	Petit Verdot	*
+46	2022	item	Viníferas	Petite Sirah	*
+47	2022	item	Viníferas	Pinotage	*
+48	2022	item	Viníferas	Pinot Noir	*
+49	2022	item	Viníferas	Pinot Saint George	*
+50	2022	item	Viníferas	Piriquita	*
+51	2022	item	Viníferas	Rebo	*
+52	2022	item	Viníferas	Refosco	*
+53	2022	item	Viníferas	Rondinella	*
+54	2022	item	Viníferas	Ruby Cabernet	*
+55	2022	item	Viníferas	Sangiovese	*
+56	2022	item	Viníferas	Sira (falsa)	*
+57	2022	item	Viníferas	Tannat	*
+58	2022	item	Viníferas	Tempranillo	*
+59	2022	item	Viníferas	Teroldego	*
+60	2022	item	Viníferas	Torrontes	*
+61	2022	item	Viníferas	Tinta Barroca	*
+62	2022	item	Viníferas	Touriga Francesa	*
+63	2022	item	Viníferas	Touriga Nacional	*
+64	2022	item	Viníferas	Tinta Madeira	*
+65	2022	item	Viníferas	Tintoria	*
+66	2022	item	Viníferas	Trincdeira	*
+67	2022	item	Viníferas	Trousseau	*
+68	2022	item	Viníferas	Zinfandel	*
+69	2022	item	Viníferas	Outras1	*
+70	2022	subtotal	Viníferas	BRANCAS E ROSADAS	*
+71	2022	item	Viníferas	Aliatico	*
+72	2022	item	Viníferas	Aligote	*
+73	2022	item	Viníferas	Altesse	*
+74	2022	item	Viníferas	Alvarinho	*
+75	2022	item	Viníferas	Arriloba	*
+76	2022	item	Viníferas	Auxerrois	*
+77	2022	item	Viníferas	Burger	*
+78	2022	item	Viníferas	Chardonnay	*
+79	2022	item	Viníferas	Chasselas	*
+80	2022	item	Viníferas	Chenin Blanc	*
+81	2022	item	Viníferas	Clairette(1)	*
+82	2022	item	Viníferas	Colombard	*
+83	2022	item	Viníferas	Flora	*
+84	2022	item	Viníferas	Garganega	*
+85	2022	item	Viníferas	Gewurztraminer	*
+86	2022	item	Viníferas	Gouveio	*
+87	2022	item	Viníferas	Gros Manseng	*
+88	2022	item	Viníferas	Italia (Pirovano 65) (PE)	*
+89	2022	item	Viníferas	Maccabeo	*
+90	2022	item	Viníferas	Malvasia	*
+91	2022	item	Viníferas	Malvasia Amarela	*
+92	2022	item	Viníferas	Malvasia Bianca	*
+93	2022	item	Viníferas	Malvasia Chianti	*
+94	2022	item	Viníferas	Malvasia Verde	*
+95	2022	item	Viníferas	Malvasia di Candia	*
+96	2022	item	Viníferas	Malvasia Istriana	*
+97	2022	item	Viníferas	Mistura de uvas viníferas branco	*
+98	2022	item	Viníferas	Mistura de uvas viníferas rosado	*
+99	2022	item	Viníferas	Moscato Branco	*
+100	2022	item	Viníferas	Moscato Canelli	*
+101	2022	item	Viníferas	Moscato Giallo	*
+102	2022	item	Viníferas	Moscato Nazareno	*
+103	2022	item	Viníferas	Moscato Bianco R2	*
+104	2022	item	Viníferas	Moscato de Alexandria	*
+105	2022	item	Viníferas	Moscato Rosado	*
+106	2022	item	Viníferas	Muscat à Petits Grains	*
+107	2022	item	Viníferas	Muller Thurgau	*
+108	2022	item	Viníferas	Muscadelle	*
+109	2022	item	Viníferas	Ora	*
+110	2022	item	Viníferas	Palomino	*
+111	2022	item	Viníferas	Petit Manseng	*
+112	2022	item	Viníferas	Peverella	*
+113	2022	item	Viníferas	Pinot Blanc	*
+114	2022	item	Viníferas	Pinot Gris	*
+115	2022	item	Viníferas	Prosecco	*
+116	2022	item	Viníferas	Red Veltliner	*
+117	2022	item	Viníferas	Riesling Italico	*
+118	2022	item	Viníferas	Riesling Renano	*
+119	2022	item	Viníferas	Sauvignon Blanc(2)	*
+120	2022	item	Viníferas	Sauvignon Gris	*
+121	2022	item	Viníferas	Seara Nova	*
+122	2022	item	Viníferas	Semillon	*
+123	2022	item	Viníferas	Schonburger	*
+124	2022	item	Viníferas	Sylvaner	*
+125	2022	item	Viníferas	Tocai Friulano	*
+126	2022	item	Viníferas	Trebbiano	*
+127	2022	item	Viníferas	Trebbiano Toscano	*
+128	2022	item	Viníferas	Verdea	*
+129	2022	item	Viníferas	Verdelho	*
+130	2022	item	Viníferas	Verdiso	*
+131	2022	item	Viníferas	Vermentino	*
+132	2022	item	Viníferas	Vernaccia	*
+133	2022	item	Viníferas	Viognier	*
+134	2022	item	Viníferas	Outras(3)	*
+135	2022	item	Viníferas	Total	0
+136	2022	total	Viníferas	Total	0
+id	2022	subtotal	Americanas e híbridas	TINTAS	*
+1	2022	item	Americanas e híbridas	Bacarina	*
+2	2022	item	Americanas e híbridas	Bailey	*
+3	2022	item	Americanas e híbridas	Bordo	*
+4	2022	item	Americanas e híbridas	Bourdin (S)	*
+5	2022	item	Americanas e híbridas	BRS Carmen	*
+6	2022	item	Americanas e híbridas	BRS Cora	*
+7	2022	item	Americanas e híbridas	BRS Magna	*
+8	2022	item	Americanas e híbridas	BRS Margot	*
+9	2022	item	Americanas e híbridas	BRS Morena	*
+10	2022	item	Americanas e híbridas	BRS Rúbea	*
+11	2022	item	Americanas e híbridas	BRS Violeta	*
+12	2022	item	Americanas e híbridas	BRS Vitória	*
+13	2022	item	Americanas e híbridas	Champagnon (Champanheta)	*
+14	2022	item	Americanas e híbridas	Coleções	*
+15	2022	item	Americanas e híbridas	Concord	*
+16	2022	item	Americanas e híbridas	Concord clone 30	*
+17	2022	item	Americanas e híbridas	Couderc	*
+18	2022	item	Americanas e híbridas	Cynthiana(1)	*
+19	2022	item	Americanas e híbridas	Herbemont	*
+20	2022	item	Americanas e híbridas	IAC 138022	*
+21	2022	item	Americanas e híbridas	Isabel	*
+22	2022	item	Americanas e híbridas	Isabel Precoce	*
+23	2022	item	Americanas e híbridas	Jacquez	*
+24	2022	item	Americanas e híbridas	Kyoko	*
+25	2022	item	Americanas e híbridas	Landot	*
+26	2022	item	Americanas e híbridas	Mistura de uvas americanas tinto	*
+27	2022	item	Americanas e híbridas	Oberlin	*
+28	2022	item	Americanas e híbridas	Othello	*
+29	2022	item	Americanas e híbridas	Paco	*
+30	2022	item	Americanas e híbridas	Patricia	*
+31	2022	item	Americanas e híbridas	Seibel	*
+32	2022	item	Americanas e híbridas	Seibel 2 (seibeleto)	*
+33	2022	item	Americanas e híbridas	Seyve Willard (Tinta)	*
+34	2022	item	Americanas e híbridas	Vênus	*
+35	2022	subtotal	Americanas e híbridas	BRANCAS E ROSADAS	*
+36	2022	item	Americanas e híbridas	Baco	*
+37	2022	item	Americanas e híbridas	Bokay	*
+38	2022	item	Americanas e híbridas	BRS Clara	*
+39	2022	item	Americanas e híbridas	BRS Lorena	*
+40	2022	item	Americanas e híbridas	Couderc 13	*
+41	2022	item	Americanas e híbridas	Delaware	*
+42	2022	item	Americanas e híbridas	Dona Zillá	*
+43	2022	item	Americanas e híbridas	Dut Chess	*
+44	2022	item	Americanas e híbridas	Goethe	*
+45	2022	item	Americanas e híbridas	IAC	*
+46	2022	item	Americanas e híbridas	Juliana	*
+47	2022	item	Americanas e híbridas	Martha	*
+48	2022	item	Americanas e híbridas	Mistura de uvas americanas	*
+49	2022	item	Americanas e híbridas	Moscato Embrapa	*
+50	2022	item	Americanas e híbridas	Niagara	*
+51	2022	item	Americanas e híbridas	Niagara Branca	*
+52	2022	item	Americanas e híbridas	Niagara Rosada	*
+53	2022	item	Americanas e híbridas	Poloske	*
+54	2022	item	Americanas e híbridas	Seleções	*
+55	2022	item	Americanas e híbridas	Seyve Villard	*
+56	2022	item	Americanas e híbridas	Seyve Villard 5276	*
+57	2022	item	Americanas e híbridas	Seyve Villard 12375	*
+58	2022	item	Americanas e híbridas	Tardia de Caxias	*
+59	2022	item	Americanas e híbridas	Outras(2)	*
+60	2022	item	Americanas e híbridas	Total	0
+61	2022	total	Americanas e híbridas	Total	0
+id	2022	subtotal	Uvas de mesa	TINTAS	*
+1	2022	item	Uvas de mesa	Alphonse Lavallee	*
+2	2022	item	Uvas de mesa	Moscato de Hamburgo	*
+3	2022	subtotal	Uvas de mesa	BRANCAS	*
+4	2022	item	Uvas de mesa	Cardinal	*
+5	2022	item	Uvas de mesa	Golden Queen	*
+6	2022	item	Uvas de mesa	Patrícia	*
+7	2022	item	Uvas de mesa	Perlona	*
+8	2022	item	Uvas de mesa	Italia	*
+9	2022	item	Uvas de mesa	Rubi (Itália, Itália Ro)	*
+10	2022	item	Uvas de mesa	Total	0
+11	2022	total	Uvas de mesa	Total	0
+id	2022	subtotal	Sem classificação	Sem classificação	*
+1	2022	item	Sem classificação	Total	0
+2	2022	total	Sem classificação	Total	0

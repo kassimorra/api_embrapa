@@ -1,0 +1,214 @@
+id	ano	tipo_item	classificação	Cultivar	Quantidade (Kg)
+1	1990	subtotal	Viníferas	TINTAS	24.795.507
+2	1990	item	Viníferas	Alicante Bouschet	46.983
+3	1990	item	Viníferas	Ancelota	-
+4	1990	item	Viníferas	Aramon	-
+5	1990	item	Viníferas	Alfrocheiro	-
+6	1990	item	Viníferas	Arinarnoa	-
+7	1990	item	Viníferas	Aspirant Bouschet	-
+8	1990	item	Viníferas	Barbera	2.587.150
+9	1990	item	Viníferas	Bonarda	586.098
+10	1990	item	Viníferas	Cabernet Franc	7.568.645
+11	1990	item	Viníferas	Cabernet Sauvignon	2.951.138
+12	1990	item	Viníferas	Caladoc	-
+13	1990	item	Viníferas	Campanario	-
+14	1990	item	Viníferas	Canaiolo	131.742
+15	1990	item	Viníferas	Carignan	-
+16	1990	item	Viníferas	Carmenere	55.499
+17	1990	item	Viníferas	Castelão	-
+18	1990	item	Viníferas	Corvina	-
+19	1990	item	Viníferas	Croatina	-
+20	1990	item	Viníferas	Cinsaut	27.386
+21	1990	item	Viníferas	Dom Felder	-
+22	1990	item	Viníferas	Dolcetto	-
+23	1990	item	Viníferas	Durif	-
+24	1990	item	Viníferas	Egiodola	-
+25	1990	item	Viníferas	Ekigaina	-
+26	1990	item	Viníferas	Festival (Sugraone)	-
+27	1990	item	Viníferas	Franconia	-
+28	1990	item	Viníferas	Freisa	-
+29	1990	item	Viníferas	Gamay St Romain	399.023
+30	1990	item	Viníferas	Gamay Beaujolais	558.237
+31	1990	item	Viníferas	Grand Noir	-
+32	1990	item	Viníferas	Grenache	3.289
+33	1990	item	Viníferas	Jaen	-
+34	1990	item	Viníferas	Lagrein	-
+35	1990	item	Viníferas	Lambrusco	15.560
+36	1990	item	Viníferas	Malbec	69.305
+37	1990	item	Viníferas	Marzemina	143.957
+38	1990	item	Viníferas	Merlot	6.440.525
+39	1990	item	Viníferas	Marselan	-
+40	1990	item	Viníferas	Molinera	-
+41	1990	item	Viníferas	Montepulciano	-
+42	1990	item	Viníferas	Moscato Bailey	-
+43	1990	item	Viníferas	Napa Gamay	193.570
+44	1990	item	Viníferas	Nebbiolo	28.600
+45	1990	item	Viníferas	Petit Verdot	-
+46	1990	item	Viníferas	Petite Sirah	208.765
+47	1990	item	Viníferas	Pinotage	76.979
+48	1990	item	Viníferas	Pinot Noir	409.901
+49	1990	item	Viníferas	Pinot Saint George	118.160
+50	1990	item	Viníferas	Piriquita	-
+51	1990	item	Viníferas	Rebo	-
+52	1990	item	Viníferas	Refosco	-
+53	1990	item	Viníferas	Rondinella	-
+54	1990	item	Viníferas	Ruby Cabernet	-
+55	1990	item	Viníferas	Sangiovese	59.620
+56	1990	item	Viníferas	Sira (falsa)	182.243
+57	1990	item	Viníferas	Tannat	351.017
+58	1990	item	Viníferas	Tempranillo	-
+59	1990	item	Viníferas	Teroldego	-
+60	1990	item	Viníferas	Torrontes	-
+61	1990	item	Viníferas	Tinta Barroca	-
+62	1990	item	Viníferas	Touriga Francesa	-
+63	1990	item	Viníferas	Touriga Nacional	-
+64	1990	item	Viníferas	Tinta Madeira	54
+65	1990	item	Viníferas	Tintoria	14.526
+66	1990	item	Viníferas	Trincdeira	-
+67	1990	item	Viníferas	Trousseau	-
+68	1990	item	Viníferas	Zinfandel	1.567.535
+69	1990	item	Viníferas	Outras1	-
+70	1990	subtotal	Viníferas	BRANCAS E ROSADAS	73.556.749
+71	1990	item	Viníferas	Aliatico	-
+72	1990	item	Viníferas	Aligote	-
+73	1990	item	Viníferas	Altesse	40.662
+74	1990	item	Viníferas	Alvarinho	-
+75	1990	item	Viníferas	Arriloba	-
+76	1990	item	Viníferas	Auxerrois	-
+77	1990	item	Viníferas	Burger	-
+78	1990	item	Viníferas	Chardonnay	1.310.807
+79	1990	item	Viníferas	Chasselas	239.011
+80	1990	item	Viníferas	Chenin Blanc	386.466
+81	1990	item	Viníferas	Clairette(1)	754
+82	1990	item	Viníferas	Colombard	38.460
+83	1990	item	Viníferas	Flora	184.768
+84	1990	item	Viníferas	Garganega	-
+85	1990	item	Viníferas	Gewurztraminer	1.616.040
+86	1990	item	Viníferas	Gouveio	-
+87	1990	item	Viníferas	Gros Manseng	-
+88	1990	item	Viníferas	Italia (Pirovano 65) (PE)	-
+89	1990	item	Viníferas	Maccabeo	-
+90	1990	item	Viníferas	Malvasia	3.945.671
+91	1990	item	Viníferas	Malvasia Amarela	-
+92	1990	item	Viníferas	Malvasia Bianca	12.319
+93	1990	item	Viníferas	Malvasia Chianti	-
+94	1990	item	Viníferas	Malvasia Verde	-
+95	1990	item	Viníferas	Malvasia di Candia	-
+96	1990	item	Viníferas	Malvasia Istriana	-
+97	1990	item	Viníferas	Mistura de uvas viníferas branco	-
+98	1990	item	Viníferas	Mistura de uvas viníferas rosado	-
+99	1990	item	Viníferas	Moscato Branco	19.690.691
+100	1990	item	Viníferas	Moscato Canelli	-
+101	1990	item	Viníferas	Moscato Giallo	-
+102	1990	item	Viníferas	Moscato Nazareno	-
+103	1990	item	Viníferas	Moscato Bianco R2	-
+104	1990	item	Viníferas	Moscato de Alexandria	-
+105	1990	item	Viníferas	Moscato Rosado	-
+106	1990	item	Viníferas	Muscat à Petits Grains	-
+107	1990	item	Viníferas	Muller Thurgau	36.313
+108	1990	item	Viníferas	Muscadelle	5.536
+109	1990	item	Viníferas	Ora	-
+110	1990	item	Viníferas	Palomino	58.657
+111	1990	item	Viníferas	Petit Manseng	-
+112	1990	item	Viníferas	Peverella	2.072.218
+113	1990	item	Viníferas	Pinot Blanc	801.355
+114	1990	item	Viníferas	Pinot Gris	4.771
+115	1990	item	Viníferas	Prosecco	364.665
+116	1990	item	Viníferas	Red Veltliner	-
+117	1990	item	Viníferas	Riesling Italico	11.632.192
+118	1990	item	Viníferas	Riesling Renano	501.972
+119	1990	item	Viníferas	Sauvignon Blanc(2)	764.746
+120	1990	item	Viníferas	Sauvignon Gris	-
+121	1990	item	Viníferas	Seara Nova	9.338
+122	1990	item	Viníferas	Semillon	9.189.656
+123	1990	item	Viníferas	Schonburger	-
+124	1990	item	Viníferas	Sylvaner	166.398
+125	1990	item	Viníferas	Tocai Friulano	3.118
+126	1990	item	Viníferas	Trebbiano	18.845.488
+127	1990	item	Viníferas	Trebbiano Toscano	-
+128	1990	item	Viníferas	Verdea	-
+129	1990	item	Viníferas	Verdelho	-
+130	1990	item	Viníferas	Verdiso	970
+131	1990	item	Viníferas	Vermentino	29.830
+132	1990	item	Viníferas	Vernaccia	1.603.877
+133	1990	item	Viníferas	Viognier	-
+134	1990	item	Viníferas	Outras(3)	-
+135	1990	item	Viníferas	Total	98.352.256
+136	1990	total	Viníferas	Total	98.352.256
+id	1990	subtotal	Americanas e híbridas	TINTAS	314.756.312
+1	1990	item	Americanas e híbridas	Bacarina	-
+2	1990	item	Americanas e híbridas	Bailey	-
+3	1990	item	Americanas e híbridas	Bordo	32.681.255
+4	1990	item	Americanas e híbridas	Bourdin (S)	-
+5	1990	item	Americanas e híbridas	BRS Carmen	-
+6	1990	item	Americanas e híbridas	BRS Cora	-
+7	1990	item	Americanas e híbridas	BRS Magna	-
+8	1990	item	Americanas e híbridas	BRS Margot	-
+9	1990	item	Americanas e híbridas	BRS Morena	-
+10	1990	item	Americanas e híbridas	BRS Rúbea	-
+11	1990	item	Americanas e híbridas	BRS Violeta	-
+12	1990	item	Americanas e híbridas	BRS Vitória	-
+13	1990	item	Americanas e híbridas	Champagnon (Champanheta)	-
+14	1990	item	Americanas e híbridas	Coleções	-
+15	1990	item	Americanas e híbridas	Concord	15.417.034
+16	1990	item	Americanas e híbridas	Concord clone 30	-
+17	1990	item	Americanas e híbridas	Couderc	6.959.591
+18	1990	item	Americanas e híbridas	Cynthiana(1)	342.604
+19	1990	item	Americanas e híbridas	Herbemont	33.234.026
+20	1990	item	Americanas e híbridas	IAC 138022	-
+21	1990	item	Americanas e híbridas	Isabel	210.877.130
+22	1990	item	Americanas e híbridas	Isabel Precoce	-
+23	1990	item	Americanas e híbridas	Jacquez	995.409
+24	1990	item	Americanas e híbridas	Kyoko	-
+25	1990	item	Americanas e híbridas	Landot	3.243
+26	1990	item	Americanas e híbridas	Mistura de uvas americanas tinto	-
+27	1990	item	Americanas e híbridas	Oberlin	91
+28	1990	item	Americanas e híbridas	Othello	57.552
+29	1990	item	Americanas e híbridas	Paco	-
+30	1990	item	Americanas e híbridas	Patricia	-
+31	1990	item	Americanas e híbridas	Seibel	14.188.377
+32	1990	item	Americanas e híbridas	Seibel 2 (seibeleto)	-
+33	1990	item	Americanas e híbridas	Seyve Willard (Tinta)	-
+34	1990	item	Americanas e híbridas	Vênus	-
+35	1990	subtotal	Americanas e híbridas	BRANCAS E ROSADAS	28.728.839
+36	1990	item	Americanas e híbridas	Baco	739
+37	1990	item	Americanas e híbridas	Bokay	-
+38	1990	item	Americanas e híbridas	BRS Clara	-
+39	1990	item	Americanas e híbridas	BRS Lorena	-
+40	1990	item	Americanas e híbridas	Couderc 13	2.790.853
+41	1990	item	Americanas e híbridas	Delaware	-
+42	1990	item	Americanas e híbridas	Dona Zillá	-
+43	1990	item	Americanas e híbridas	Dut Chess	-
+44	1990	item	Americanas e híbridas	Goethe	472.611
+45	1990	item	Americanas e híbridas	IAC	-
+46	1990	item	Americanas e híbridas	Juliana	-
+47	1990	item	Americanas e híbridas	Martha	4.001
+48	1990	item	Americanas e híbridas	Mistura de uvas americanas	-
+49	1990	item	Americanas e híbridas	Moscato Embrapa	-
+50	1990	item	Americanas e híbridas	Niagara	20.800.524
+51	1990	item	Americanas e híbridas	Niagara Branca	-
+52	1990	item	Americanas e híbridas	Niagara Rosada	477.502
+53	1990	item	Americanas e híbridas	Poloske	-
+54	1990	item	Americanas e híbridas	Seleções	-
+55	1990	item	Americanas e híbridas	Seyve Villard	4.182.609
+56	1990	item	Americanas e híbridas	Seyve Villard 5276	-
+57	1990	item	Americanas e híbridas	Seyve Villard 12375	-
+58	1990	item	Americanas e híbridas	Tardia de Caxias	-
+59	1990	item	Americanas e híbridas	Outras(2)	-
+60	1990	item	Americanas e híbridas	Total	343.485.151
+61	1990	total	Americanas e híbridas	Total	343.485.151
+id	1990	subtotal	Uvas de mesa	TINTAS	157.262
+1	1990	item	Uvas de mesa	Alphonse Lavallee	-
+2	1990	item	Uvas de mesa	Moscato de Hamburgo	-
+3	1990	subtotal	Uvas de mesa	BRANCAS	-
+4	1990	item	Uvas de mesa	Cardinal	-
+5	1990	item	Uvas de mesa	Golden Queen	-
+6	1990	item	Uvas de mesa	Patrícia	-
+7	1990	item	Uvas de mesa	Perlona	-
+8	1990	item	Uvas de mesa	Italia	-
+9	1990	item	Uvas de mesa	Rubi (Itália, Itália Ro)	-
+10	1990	item	Uvas de mesa	Total	157.262
+11	1990	total	Uvas de mesa	Total	157.262
+id	1990	subtotal	Sem classificação	Sem classificação	-
+1	1990	item	Sem classificação	Total	0
+2	1990	total	Sem classificação	Total	0

@@ -1,0 +1,137 @@
+id	ano	tipo_item	classificação	Cultivar	Quantidade (Kg)
+1	1999	subtotal		TINTAS	18.051.102
+2	1999	item		Alicante Bouschet	102.174
+3	1999	item		Ancelota	-
+4	1999	item		Aramon	-
+5	1999	item		Alfrocheiro	-
+6	1999	item		Arinarnoa	-
+7	1999	item		Aspirant Bouschet	-
+8	1999	item		Barbera	149.019
+9	1999	item		Bonarda	88.710
+10	1999	item		Cabernet Franc	2.910.807
+11	1999	item		Cabernet Sauvignon	4.490.054
+12	1999	item		Caladoc	-
+13	1999	item		Campanario	-
+14	1999	item		Canaiolo	1.961
+15	1999	item		Carignan	-
+16	1999	item		Carmenere	15.050
+17	1999	item		Castelão	-
+18	1999	item		Corvina	-
+19	1999	item		Croatina	-
+20	1999	item		Cinsaut	14.800
+21	1999	item		Dom Felder	-
+22	1999	item		Dolcetto	-
+23	1999	item		Durif	-
+24	1999	item		Egiodola	188.625
+25	1999	item		Ekigaina	-
+26	1999	item		Festival (Sugraone)	-
+27	1999	item		Franconia	-
+28	1999	item		Freisa	-
+29	1999	item		Gamay St Romain	569.713
+30	1999	item		Gamay Beaujolais	215.226
+31	1999	item		Grand Noir	-
+32	1999	item		Grenache	-
+33	1999	item		Jaen	-
+34	1999	item		Lagrein	-
+35	1999	item		Lambrusco	67.305
+36	1999	item		Malbec	43.135
+37	1999	item		Marzemina	-
+38	1999	item		Merlot	5.071.616
+39	1999	item		Marselan	-
+40	1999	item		Molinera	-
+41	1999	item		Montepulciano	-
+42	1999	item		Moscato Bailey	-
+43	1999	item		Napa Gamay	216.540
+44	1999	item		Nebbiolo	-
+45	1999	item		Petit Verdot	-
+46	1999	item		Petite Sirah	109.791
+47	1999	item		Pinotage	935.337
+48	1999	item		Pinot Noir	471.462
+49	1999	item		Pinot Saint George	195.560
+50	1999	item		Piriquita	-
+51	1999	item		Rebo	-
+52	1999	item		Refosco	-
+53	1999	item		Rondinella	-
+54	1999	item		Ruby Cabernet	24.678
+55	1999	item		Sangiovese	-
+56	1999	item		Sira (falsa)	-
+57	1999	item		Tannat	2.077.578
+58	1999	item		Tempranillo	-
+59	1999	item		Teroldego	-
+60	1999	item		Torrontes	-
+61	1999	item		Tinta Barroca	-
+62	1999	item		Touriga Francesa	-
+63	1999	item		Touriga Nacional	-
+64	1999	item		Tinta Madeira	-
+65	1999	item		Tintoria	-
+66	1999	item		Trincdeira	-
+67	1999	item		Trousseau	-
+68	1999	item		Zinfandel	84.271
+69	1999	item		Outras1	7.690
+70	1999	subtotal		BRANCAS E ROSADAS	40.486.844
+71	1999	item		Aliatico	-
+72	1999	item		Aligote	-
+73	1999	item		Altesse	-
+74	1999	item		Alvarinho	-
+75	1999	item		Arriloba	26.135
+76	1999	item		Auxerrois	-
+77	1999	item		Burger	14.427
+78	1999	item		Chardonnay	1.501.537
+79	1999	item		Chasselas	267.566
+80	1999	item		Chenin Blanc	492.063
+81	1999	item		Clairette(1)	-
+82	1999	item		Colombard	282.698
+83	1999	item		Flora	496.779
+84	1999	item		Garganega	-
+85	1999	item		Gewurztraminer	293.892
+86	1999	item		Gouveio	-
+87	1999	item		Gros Manseng	-
+88	1999	item		Italia (Pirovano 65) (PE)	-
+89	1999	item		Maccabeo	-
+90	1999	item		Malvasia	1.184.410
+91	1999	item		Malvasia Amarela	175.917
+92	1999	item		Malvasia Bianca	-
+93	1999	item		Malvasia Chianti	-
+94	1999	item		Malvasia Verde	173.550
+95	1999	item		Malvasia di Candia	-
+96	1999	item		Malvasia Istriana	-
+97	1999	item		Mistura de uvas viníferas branco	-
+98	1999	item		Mistura de uvas viníferas rosado	-
+99	1999	item		Moscato Branco	19.636.525
+100	1999	item		Moscato Canelli	-
+101	1999	item		Moscato Giallo	1.217
+102	1999	item		Moscato Nazareno	-
+103	1999	item		Moscato Bianco R2	-
+104	1999	item		Moscato de Alexandria	-
+105	1999	item		Moscato Rosado	-
+106	1999	item		Muscat à Petits Grains	-
+107	1999	item		Muller Thurgau	19.128
+108	1999	item		Muscadelle	-
+109	1999	item		Ora	-
+110	1999	item		Palomino	19.023
+111	1999	item		Petit Manseng	-
+112	1999	item		Peverella	224.731
+113	1999	item		Pinot Blanc	229.112
+114	1999	item		Pinot Gris	257
+115	1999	item		Prosecco	228.568
+116	1999	item		Red Veltliner	-
+117	1999	item		Riesling Italico	6.573.788
+118	1999	item		Riesling Renano	479.779
+119	1999	item		Sauvignon Blanc(2)	840.555
+120	1999	item		Sauvignon Gris	-
+121	1999	item		Seara Nova	9.550
+122	1999	item		Semillon	2.710.748
+123	1999	item		Schonburger	-
+124	1999	item		Sylvaner	84.391
+125	1999	item		Tocai Friulano	752
+126	1999	item		Trebbiano	4.189.110
+127	1999	item		Trebbiano Toscano	-
+128	1999	item		Verdea	-
+129	1999	item		Verdelho	-
+130	1999	item		Verdiso	1.654
+131	1999	item		Vermentino	12.833
+132	1999	item		Vernaccia	315.739
+133	1999	item		Viognier	-
+134	1999	item		Outras(3)	410
+135	1999	item		Total	58.537.946
+136	1999	total		Total	58.537.946
