@@ -1,0 +1,54 @@
+id	ano	tipo_item	classificação	Produto	Quantidade (L.)
+1	2023	subtotal		VINHO DE MESA	169.762.429
+2	2023	item		Tinto	139.320.884
+3	2023	item		Branco	27.910.299
+4	2023	item		Rosado	2.531.246
+5	2023	subtotal		VINHO FINO DE MESA (VINIFERA)	46.268.556
+6	2023	item		Tinto	23.615.783
+7	2023	item		Branco	20.693.437
+8	2023	item		Rosado	1.959.336
+9	2023	subtotal		SUCO	67.045.238
+10	2023	item		Suco de uva integral	38.122.173
+11	2023	item		Suco de uva concentrado	28.216.760
+12	2023	item		Suco de uva adoçado	94.587
+13	2023	item		Suco de uva orgânico	611.718
+14	2023	item		Suco de uva reconstituído	-
+15	2023	subtotal		DERIVADOS	174.716.647
+16	2023	item		Espumante	65.525
+17	2023	item		Espumante moscatel	14.744
+18	2023	item		Base espumante	-
+19	2023	item		Base espumante moscatel	6.734.590
+20	2023	item		Base Champenoise champanha	1.552.243
+21	2023	item		Base Charmat champanha	5.418.118
+22	2023	item		Bebida de uva	1.627
+23	2023	item		Polpa de uva	1.388.251
+24	2023	item		Mosto simples	157.848.983
+25	2023	item		Mosto concentrado	-
+26	2023	item		Mosto de uva com bagaço	7.784
+27	2023	item		Mosto dessulfitado	-
+28	2023	item		Mistelas	600
+29	2023	item		Néctar de uva	70.976
+30	2023	item		Licorosos	-
+31	2023	item		Compostos	-
+32	2023	item		Jeropiga	4.500
+33	2023	item		Filtrado	-
+34	2023	item		Frisante	-
+35	2023	item		Vinho leve	-
+36	2023	item		Vinho licoroso	73.600
+37	2023	item		Brandy	450
+38	2023	item		Destilado	-
+39	2023	item		Bagaceira	-
+40	2023	item		Licor de bagaceira	-
+41	2023	item		Vinagre	9.000
+42	2023	item		Borra líquida	758.140
+43	2023	item		Borra seca	17.200
+44	2023	item		Vinho Composto	-
+45	2023	item		Pisco	-
+46	2023	item		Vinho orgânico	94.150
+47	2023	item		Espumante orgânico	1.365
+48	2023	item		Destilado alcoólico simples de bagaceira	-
+49	2023	item		Vinho acidificado	2.500
+50	2023	item		Mosto parcialmente fermentado	-
+51	2023	item		Outros derivados	652.301
+52	2023	item		Total	457.792.870
+53	2023	total		Total	457.792.870
