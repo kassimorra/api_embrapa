@@ -5,12 +5,14 @@ from helpers.fastapiconf import initFast
 import authentication as auth
 from routers.authentication import router as auth_route
 from routers.embrapa import router as embrapa_route
+from routers.embrapaScrapper import router as embrapa_scrapper_route
 from routers.etl import router as etl_route
 
 app = initFast()
 
 app.include_router(auth_route)
 app.include_router(embrapa_route, dependencies=[Depends(auth.oauth2_scheme)])
+app.include_router(embrapa_scrapper_route, dependencies=[Depends(auth.oauth2_scheme)])
 app.include_router(etl_route, dependencies=[Depends(auth.oauth2_scheme)])
 
 @app.get('/', include_in_schema=False)
