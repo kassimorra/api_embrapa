@@ -1,57 +1,26 @@
-# Objetivo
-Repositório para criação da API de consulta dados da embrapa - Trabalho pós
-Esta API tem como objetivo realizar o download as informações da Embrapa e realizar o tratamento para de forma a viabilizar as análises e exploração dos dados.
+# Fase 1 ML Ops FIAP
 
-# Dados a serem trabalhados
+Este repositório tem como objetivo a realização da primeira fase do Tech Challenge do Curso de MLOps da FIAP. Nesta etapa, faz se necessário realizar o WebScrapping do site da Embrapa.
+As informações que estamos buscando são:
+- Produção
+- Processamento
+- Comercialização
+- Importação
+- Exportação
 
-## Produção de Vinho
-http://vitibrasil.cnpuv.embrapa.br/download/Producao.csv
-## Processamento de vinho
-http://vitibrasil.cnpuv.embrapa.br/download/ProcessaViniferas.csv
-http://vitibrasil.cnpuv.embrapa.br/download/ProcessaAmericanas.csv
-http://vitibrasil.cnpuv.embrapa.br/download/ProcessaMesa.csv
-http://vitibrasil.cnpuv.embrapa.br/download/ProcessaSemclass.csv
-## Comercialização de vinho
-http://vitibrasil.cnpuv.embrapa.br/download/Comercio.csv
-## Dados sobre importação
-http://vitibrasil.cnpuv.embrapa.br/download/ImpVinhos.csv
-http://vitibrasil.cnpuv.embrapa.br/download/ImpEspumantes.csv
-http://vitibrasil.cnpuv.embrapa.br/download/ImpFrescas.csv
-http://vitibrasil.cnpuv.embrapa.br/download/ImpPassas.csv
-http://vitibrasil.cnpuv.embrapa.br/download/ImpSuco.csv
-## Dados sobre exportação
-http://vitibrasil.cnpuv.embrapa.br/download/ExpVinho.csv
-http://vitibrasil.cnpuv.embrapa.br/download/ExpEspumantes.csv
-http://vitibrasil.cnpuv.embrapa.br/download/ExpUva.csv
-http://vitibrasil.cnpuv.embrapa.br/download/ExpSuco.csv
+Este repositório trata-se de um BackEnd API com Python utilizando-se do framework FastAPI.
 
-# Como será feito ?
+Existem duas soluções implantadas nesse momento, devido a algumas particularidades do site:
+- Solução 1 (Solicitado): WebScrapping do site, podendo escolher o tipo da informação e o ano de extração.
+- Solução 2 (Devido a instabilidade do site): Implementado uma solução de download direto dos arquivos do site.
 
-Este repositório utilizará duas APIs **(Características XPTO)**:
+Para testes unitários foi utilizado o PyTest. Com uma cobertura de X%.
+Os arquivos são gerados em csv e salvos em uma pasta padrão (/arquivos) do projeto.
 
-* API Download
-o Está API fará o download dos arquivos mencionados acima e os armazenará em um repositório.
+# O que esperamos no futuro ?
 
-* API ETL
-o Está API terá a função de realizar o ETL nos dados baixados de forma a estruturar e limpar os arquivos, deixando estes em formato de tabelas prontas para a realização de Analytics. 
+### Desenho de solução
+<Imagem ou Draw.IO>
 
-# Requisitos
-
-flask3.0.3
-flask_jwt_extended 4.6.0
-flask_swagger_ui 4.11.1
-json
-pandas2.2.2
-requests2.31.0
-flask_jwt_extended4.6.0
-flask_restx1.3.0
-
-# Próximos passos
-
-- Montar o requirements.txt
-- Construir o get para download dos arquivos da embrapa
-- Construir o ETL para tratamento dos arquivos
-- Montar um analytics simples dos arquivos
-- Montar autenticação das apis
-
-- melhoria no tratamento de erro dos downloads
+### Plano de implantação
+<Imagem ou Draw.IO>
