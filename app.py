@@ -18,4 +18,4 @@ async def docs() -> RedirectResponse:
     return RedirectResponse(url='/docs')
 
 #"/pytest"
-app.mount("/pytest", StaticFiles(directory="htmlcov", html=True), name="htmlcov")
+#app.mount("/pytest", StaticFiles(directory="htmlcov", html=True), name="htmlcov")

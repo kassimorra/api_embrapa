@@ -23,6 +23,7 @@ class etlFiles:
             "arquivos/ExpUva.csv",
             "arquivos/ExpSuco.csv"
         )
+        self.path2SaveEtl = "arquivosEtl/"
         self.allFilesList = []
         self.file = pd.DataFrame
         self.dictCol = {
@@ -34,17 +35,15 @@ class etlFiles:
                         }
         
     def readAllFiles(self,index):
-        if(index != -1):
+        if(index == -1):
             #embrapaFiles.embrapaDownloadAll()
-            if(len(os.listdir(self.pathFiles[0]).split("/")[0]) != 0):
-                allFilesRead = []
-                for file in os.listdir(self.pathFiles[index]):
+            pathVerify = self.pathFiles[0].split("/")[0]
+            if(len(os.listdir(pathVerify)) != 0):
+                for file in self.pathFiles:
                     if(file.find("Processa") == -1):
-                        allFilesRead.append(pd.read_csv(file, sep=";"))
+                        self.allFilesList.append(pd.read_csv(file, sep=";"))
                     else:
-                        allFilesRead.append(pd.read_csv(file, sep="\t"))
-                        
-                self.allFilesList = allFilesRead
+                        self.allFilesList.append(pd.read_csv(file, sep="\t"))
             else:
                 raise ValueError("Falha na leitura dos arquivos")
         else:
@@ -52,10 +51,9 @@ class etlFiles:
             if(os.path.isfile(self.pathFiles[index])):
                 path = self.pathFiles[index]
                 if(path.find("Processa") == -1):
-                    file = pd.read_csv(path, sep=";")
+                    self.file = pd.read_csv(path, sep=";")
                 else:
-                    file = pd.read_csv(path, sep="\t")
-                self.file = file
+                    self.file = pd.read_csv(path, sep="\t")
             else:
                 raise ValueError("Falha na leitura do arquivo")
             
@@ -66,7 +64,7 @@ class etlFiles:
         return self.file
 
     def subNoneAsZero(self, index):
-        if(index != -1):
+        if(index == -1):
             if (len(self.allFilesList) != 0):
                 for i, file in enumerate(self.allFilesList):
                     self.allFilesList[i] = self.allFilesList[i].fillna(0)
@@ -77,7 +75,7 @@ class etlFiles:
         
     
     def clearNullValues(self,index):
-        if(index != -1):
+        if(index == -1):
             if (len(self.allFilesList) != 0):
                 for i, file in enumerate(self.allFilesList):
                     self.allFilesList[i] = self.allFilesList[i].dropna()
@@ -87,17 +85,17 @@ class etlFiles:
             self.file = self.file.dropna()
     
     def removeDuplicates(self,index):
-        if(index != -1):
+        if(index == -1):
             if (len(self.allFilesList) != 0):
                 for i, file in enumerate(self.allFilesList):
-                    self.allFilesList[i] = self.allFilesList[i].dropduplicates()
+                    self.allFilesList[i] = self.allFilesList[i].drop_duplicates()
             else:
                 raise ValueError("Falha ao remover duplicatas")
         else:
-            self.file = self.file[i].dropduplicates()
+            self.file = self.file.drop_duplicates()
 
     def ajustTypes(self,index):
-        if(index != -1):
+        if(index == -1):
             if (len(self.allFilesList) != 0):
                 for i, file in enumerate(self.allFilesList):
                     file.rename(columns=self.ajustNameColumns, inplace=True)
@@ -118,11 +116,11 @@ class etlFiles:
                 
             
         
-    def ajustNameColumns(col):
+    def ajustNameColumns(self,col):
         colSemAcento = unidecode(col)
         return colSemAcento.lower()
         
-    def ajustNameColumnsNumbs(df):
+    def ajustNameColumnsNumbs(self,df):
         struct2Find = r"\b\d+\.\d+\b"
         for col in df:
             if(re.findall(struct2Find,col)):
@@ -132,7 +130,7 @@ class etlFiles:
             
     def sumSameColuns(self,index):
         #Necessidade verifciar caso index não conhecida entre as colunas, como fica
-        if(index != -1):
+        if(index == -1):
             if (len(self.allFilesList) != 0):
                 for i, file in enumerate(self.allFilesList):
                     file = self.ajustNameColumnsNumbs(file)
@@ -153,15 +151,15 @@ class etlFiles:
             
 
     def saveFiles(self,index):
-        if(index != -1):
+        if(index == -1):
             if (len(self.allFilesList) != 0):
                 for i, file in enumerate(self.allFilesList):
-                    filename = "arquivosEtl/" + self.pathFiles[i].split("/")[1]
+                    filename = self.path2SaveEtl + self.pathFiles[i].split("/")[1]
                     file.to_csv(filename,index=False)
             else:
                 raise ValueError("Falha ao salvar arquivos")
         else:
-            filename = "arquivosEtl/" + self.pathFiles[index].split("/")[1]
+            filename = self.path2SaveEtl + self.pathFiles[index].split("/")[1]
             self.file.to_csv(filename,index=False)
                
     def makeEtl(self,index):
