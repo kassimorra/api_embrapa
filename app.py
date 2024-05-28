@@ -17,5 +17,6 @@ app.include_router(embrapa_scrapper_route, dependencies=[Depends(auth.oauth2_sch
 async def docs() -> RedirectResponse:
     return RedirectResponse(url='/docs')
 
+#Utilização somente em desenvolvimento
 #"/pytest"
 # app.mount("/pytest", StaticFiles(directory="htmlcov", html=True), name="htmlcov")
