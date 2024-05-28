@@ -14,26 +14,24 @@ Existem duas soluções implantadas nesse momento, devido a algumas particularid
 - Solução 1 (Solicitado): WebScrapping do site, podendo escolher o tipo da informação e o ano de extração.
 - Solução 2 (Devido a instabilidade do site): Implementado uma solução de download direto dos arquivos do site.
 
-Para testes unitários foi utilizado o PyTest. Com uma cobertura de 89%.
+Para testes unitários foi utilizado o PyTest.
 
-Name                         Stmts   Miss  Cover
-
-helpers\__init__.py              0      0   100%
-helpers\hlpCsv.py                8      0   100%
-helpers\hlpDownload.py           9      1    89%
-helpers\hlpEmbrapa.py           14      5    64%
-tests\__init__.py                0      0   100%
-tests\test_download.py           6      0   100%
-tests\test_embrapafiles.py       0      0   100%
-tests\test_helpers.py            0      0   100%
-tests\test_hlpCsv.py            26      0   100%
-tests\test_scrapper.py           4      2    50%
-webscrapper\BaseOptions.py      15      0   100%
-webscrapper\Utils.py            63      8    87%
-webscrapper\__init__.py          0      0   100%
-
-
-TOTAL                          145     16    89%
+Name | Stmts | Miss | Cover
+--- | --- | --- | ---
+helpers\__init__.py | 0 | 0 | 100%
+helpers\hlpCsv.py | 8 | 0 | 100%
+helpers\hlpDownload.py | 9 | 1 | 89%
+helpers\hlpEmbrapa.py | 4 | 5 | 64%
+tests\__init__.py | 0 | 0 | 100%
+tests\test_download.py | 6 | 0 | 100%
+tests\test_embrapafiles.py | 0 | 0 | 100%
+tests\test_helpers.py | 0 | 0 | 100%
+tests\test_hlpCsv.py | 26 | 0 | 100%
+tests\test_scrapper.py | 4 | 2 | 50%
+webscrapper\BaseOptions.py | 15 | 0 | 100%
+webscrapper\Utils.p | 63 | 8 | 87%
+webscrapper\__init__.py | 0 | 0 | 100%
+TOTAL | 145 | 16 | 89%
 
 
 Os arquivos são gerados em csv e salvos em uma pasta padrão (/arquivos) do projeto.
