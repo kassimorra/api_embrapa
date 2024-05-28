@@ -2,7 +2,7 @@ import pandas as pd
 import os
 import re
 from unidecode import unidecode
-#from embrapaFiles import embrapaFiles
+from .hlpEmbrapa import embrapa_download_file,embrapa_download_all
 
 class etlFiles:
     def __init__(self):
@@ -36,26 +36,33 @@ class etlFiles:
         
     def readAllFiles(self,index):
         if(index == -1):
-            #embrapaFiles.embrapaDownloadAll()
-            pathVerify = self.pathFiles[0].split("/")[0]
-            if(len(os.listdir(pathVerify)) != 0):
-                for file in self.pathFiles:
-                    if(file.find("Processa") == -1):
-                        self.allFilesList.append(pd.read_csv(file, sep=";"))
-                    else:
-                        self.allFilesList.append(pd.read_csv(file, sep="\t"))
-            else:
-                raise ValueError("Falha na leitura dos arquivos")
-        else:
-            #embrapaFiles.embrapaDownloadFile(index)
-            if(os.path.isfile(self.pathFiles[index])):
-                path = self.pathFiles[index]
-                if(path.find("Processa") == -1):
-                    self.file = pd.read_csv(path, sep=";")
+            try:
+                embrapa_download_all()
+                pathVerify = self.pathFiles[0].split("/")[0]
+                if(len(os.listdir(pathVerify)) != 0):
+                    for file in self.pathFiles:
+                        if(file.find("Processa") == -1):
+                            self.allFilesList.append(pd.read_csv(file, sep=";"))
+                        else:
+                            self.allFilesList.append(pd.read_csv(file, sep="\t"))
                 else:
-                    self.file = pd.read_csv(path, sep="\t")
-            else:
-                raise ValueError("Falha na leitura do arquivo")
+                    raise ValueError("Falha na leitura dos arquivos")
+            except:
+                raise ValueError("Falha ao baixar arquivos")
+            
+        else:
+            try:
+                embrapa_download_file(index)
+                if(os.path.isfile(self.pathFiles[index])):
+                    path = self.pathFiles[index]
+                    if(path.find("Processa") == -1):
+                        self.file = pd.read_csv(path, sep=";")
+                    else:
+                        self.file = pd.read_csv(path, sep="\t")
+                else:
+                    raise ValueError("Falha na leitura do arquivo")
+            except:
+                raise ValueError("Falha ao baixar arquivo individual")
             
     def returnAllFiles(self):
         return self.allFilesList

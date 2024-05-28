@@ -16,8 +16,9 @@ def Get_Single_File(index: int):
     
 @router.get('/getFile', tags=["Download Embrapa and Make ETL in Files"])
 def Get_All_Files():
-    try:
+    etl.makeEtl(-1)
+    """try:
         etl.makeEtl(-1)
     except:
         raise HTTPException(status_code=status.HTTP_503_SERVICE_UNAVAILABLE, detail="Failed to download file")
-    return {"message": "sucesso"}
+    return {"message": "sucesso"}"""
