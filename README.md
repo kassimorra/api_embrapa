@@ -17,7 +17,7 @@ Existem duas soluções implantadas nesse momento, devido a algumas particularid
 Para testes unitários foi utilizado o PyTest. Com uma cobertura de 89%.
 
 Name                         Stmts   Miss  Cover
-------------------------------------------------
+
 helpers\__init__.py              0      0   100%
 helpers\hlpCsv.py                8      0   100%
 helpers\hlpDownload.py           9      1    89%
@@ -31,7 +31,8 @@ tests\test_scrapper.py           4      2    50%
 webscrapper\BaseOptions.py      15      0   100%
 webscrapper\Utils.py            63      8    87%
 webscrapper\__init__.py          0      0   100%
-------------------------------------------------
+
+
 TOTAL                          145     16    89%
 
 
