@@ -17,10 +17,10 @@ Existem duas soluções implantadas nesse momento, devido a algumas particularid
 Para testes unitários foi utilizado o PyTest. Com uma cobertura de X%.
 Os arquivos são gerados em csv e salvos em uma pasta padrão (/arquivos) do projeto.
 
+# Desenho da ingestão de dados
+
+![ingestao fase01](./imgs/fase01_ingestao.png)
+
 # O que esperamos no futuro ?
 
-### Desenho de solução
-<Imagem ou Draw.IO>
-
-### Plano de implantação
-<Imagem ou Draw.IO>
+Subir essa parte de ingestão na AWS como uma esteira automatizada 
